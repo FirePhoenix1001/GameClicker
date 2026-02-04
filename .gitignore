@@ -1,0 +1,10 @@
+# --- 1. 忽略虛擬環境與系統檔 (最重要) ---
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# --- 2. 忽略打包產生的垃圾 ---
+build/
+dist/
+*.spec
