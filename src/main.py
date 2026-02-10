@@ -21,7 +21,7 @@ e_key_was_pressed = False
 c_key_was_pressed = False
 
 print("程式已啟動（輪詢模式）。")
-print(" - 按下 'w' 或 's' 測試。")
+# print(" - 按下 'w' 或 's' 測試。")
 # print(" - 按下 'esc' 鍵即可安全退出程式。")
 
 # 開始主迴圈，不斷檢查鍵盤狀態
@@ -36,7 +36,7 @@ while True:
         if keyboard.is_pressed('w'):
             # 如果 'w' 現在是按下的，但上一輪是放開的（也就是剛按下的那一瞬間）
             if not w_key_was_pressed:
-                trigger_keys('r', 'd', 0.05)
+                trigger_keys('p', 'd', 0.05)
                 w_key_was_pressed = True # 更新旗標，表示 'w' 已經被按下了
         else:
             # 如果 'w' 現在是放開的，就重設旗標
@@ -45,7 +45,7 @@ while True:
         # --- 檢查 's' 鍵 ---
         if keyboard.is_pressed('s'):
             if not s_key_was_pressed:
-                trigger_keys('v', 'd', 0.05)
+                trigger_keys('/', 'd', 0.05)
                 s_key_was_pressed = True
         else:
             s_key_was_pressed = False
@@ -53,7 +53,7 @@ while True:
         # --- 檢查 'e' 鍵 ---
         if keyboard.is_pressed('e'):
             if not e_key_was_pressed:
-                trigger_keys('r', 'f', 0.05)
+                trigger_keys('p', 'f', 0.05)
                 e_key_was_pressed = True
         else:
             e_key_was_pressed = False
@@ -61,7 +61,7 @@ while True:
         # --- 檢查 'c' 鍵 ---
         if keyboard.is_pressed('c'):
             if not c_key_was_pressed:
-                trigger_keys('v', 'f', 0.05)
+                trigger_keys('/', 'f', 0.05)
                 c_key_was_pressed = True
         else:
             c_key_was_pressed = False
