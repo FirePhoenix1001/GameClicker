@@ -13,7 +13,8 @@ class KeyboardMacro:
             ['w', 'p', 'd', 0.05],
             ['s', '/', 'd', 0.05],
             ['e', 'p', 'f', 0.05],
-            ['c', '/', 'f', 0.05]
+            ['c', '/', 'f', 0.05],
+            ['l', '/', 'a', 0.05]
         ]
         self.status_callback = None
 

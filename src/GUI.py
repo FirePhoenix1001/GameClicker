@@ -195,7 +195,7 @@ class IntegratedGUI:
         self.kb_scrollbar.pack(side="right", fill="y")
 
         # 初始化預設規則
-        for rule in [['w', 'p', 'd', '0.05'], ['s', '/', 'd', '0.05'], ['e', 'p', 'f', '0.05'], ['c', '/', 'f', '0.05']]:
+        for rule in [['w', 'p', 'd', '0.05'], ['s', '/', 'd', '0.05'], ['e', 'p', 'f', '0.05'], ['c', '/', 'f', '0.05'],['l', '/', 'a', 0.05]]:
             self.add_rule_row(rule)
 
     def add_rule_row(self, data=None):
